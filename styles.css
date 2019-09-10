@@ -1,0 +1,41 @@
+.About{
+	font-size: 1em;
+	width: 50%;
+}
+
+textarea {
+    width: 300px;
+}
+
+.description{
+
+}
+
+.input {
+	float: left;
+	width: 120px;
+	height: 60px;
+	font-size: 5px;
+	padding: 10px;
+}
+
+.output{
+	float: right;
+	width: 120px;
+	height: 60px;
+	font-size: 5px;
+	padding: 10px;
+}
+
+.titleBox {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    background-color: #184ffa;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #ffffff;
+    text-align: center;
+}
+
+
