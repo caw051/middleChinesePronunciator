@@ -4,7 +4,7 @@ from django.db import models
 
 class charPairing(models.Model):
     chineseChar = models.CharField(max_length=200) #CharFields allow Chinese chars
-    #corrAudio = models.FileField()
+    corrAudio = models.FileField()
 
 
 

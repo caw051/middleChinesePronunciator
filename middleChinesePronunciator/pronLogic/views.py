@@ -10,6 +10,6 @@ from .models import charPairing
 def pron(request):
     #Attempting to get one single word inside the Chinese thing.
     oneTestWord = charPairing.objects.create(chineseChar="囯")
-    charPairing.objects.create()
-    #oneTestWord.FileField = 
-    return render(request, 'middleChinesePronunciator.html',{oneTestWord : "oneTestWord"})
+
+    return render(request, 'middleChinesePronunciatorSimplified.html')
+    #return render(request, 'middleChinesePronunciator.html',{"oneTestWord.chineseChar": oneTestWord.chineseChar})

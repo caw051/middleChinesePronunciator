@@ -13,10 +13,12 @@
 		<div class="titleBox"> Middle Chinese Pronunciator </div> <br>
 		<div class="description">Modern to Middle Chinese</div>
 		<tr name="input">
-			<textarea id="inputBox" class="form-control" rows="10" aria-required="true" spellcheck="false"></textarea>
+			<form action="translated">
+			<textarea id="inputBox" class="form-control" rows="10" aria-required="true"
+				spellcheck="false" action=oninput></textarea>
 		<tr name="output">
 			<textarea id="outputBox" class="form-control" rows="10"
-						 readonly="readonly">{{oneTestWord}}</textarea><br>
+						 readonly="readonly">{{oneTestWord.chineseChar}}</textarea><br>
 		<button type="button">Play</button>
 
 		<!---I am probably not doing this right; there has to be a less repetitive way of creating the
