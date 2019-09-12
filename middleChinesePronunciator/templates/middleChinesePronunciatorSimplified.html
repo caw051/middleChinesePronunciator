@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" href="{% static 'styles.css' %}">
+	<!--<link rel="stylesheet" href="styles.css"> -->
+	<title>Middle Chinese Pronunciator</title>
+</head>
+<body>
+	<center>
+		<div class="titleBox"> Middle Chinese Pronunciator </div> <br>
+		<div class="description">Modern to Middle Chinese</div>
+		<form id="pronounce" action="" method="post">
+			<tr name="inAndOut">
+				<textarea id="inputBox" form="pronounce" name="charsToGet" class="form-control" rows="10" aria-required="true"
+								  spellcheck="false" action=oninput></textarea><br>
+				{% csrf_token %}
+				<input type="submit", value="Play"> 
+
+				<!---input type="button", value="Play", onClick=() -->
+				<!--<button type="button">Play</button>-->
+
+		<!---I am probably not doing this right; there has to be a less repetitive way of creating the
+	  line-breaks that I legitimately need-->
+		<p class="About">
+			This made is made by Cary Wang; the goal is to have a first shot of knowing how pronunciators
+			are created. Since no one has created a middle Chinese pronunciator, I see this as a pretty good
+			shot to make that happen, using a website. <br>
+		<p>
+
+		<p class="About">
+			The idea is to type the Chinese words you would like to pronounce in middle Chinese, to your
+			left. After typing the words, the words that the middle Chinese words have processed are to be
+			printed to the textbox to the right(and like the cantonese pronunciator, whatever words that are
+			not able to be pronounced will be marked with blue).
+
+			From there, once you press "Play", the word/word(s) will be pronounced in middle chinese.
+			
+		</p>
+	</center>
+
+
+
+	<script src={% static "locator.js" %}>
+	
+	
+	</script>
+
+
+
+</body>
+</html>

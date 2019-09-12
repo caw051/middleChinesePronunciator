@@ -1,0 +1,5 @@
+Anything  >= 20 have extra stuff.
+
+30 >= x >= 20 - Have mouth noises
+
+>= 30 have two pronunciations messed together
