@@ -17,10 +17,14 @@
 				<textarea id="inputBox" form="pronounce" name="charsToGet" class="form-control" rows="10" aria-required="true"
 								  spellcheck="false" action=oninput></textarea><br>
 				{% csrf_token %}
-				<input type="submit", value="Play"> 
+				<!--<input type="submit", value="Play"> -->
 
+				<!--Pretty sure placement doesn't matter here-->
+				<input type="hidden" name="rawChineseText" id="rawChineseText">
+
+				<input type="hidden" name="parsedMCPron" id="parsedMCPron">
 				<!---input type="button", value="Play", onClick=() -->
-				<!--<button type="button">Play</button>-->
+				<button type="button" class=clickButtonToPronounce>Play</button>
 
 		<!---I am probably not doing this right; there has to be a less repetitive way of creating the
 	  line-breaks that I legitimately need-->

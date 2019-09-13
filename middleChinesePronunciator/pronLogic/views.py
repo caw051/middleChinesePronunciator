@@ -19,18 +19,13 @@ def pron(request):
     return render(request, 'middleChinesePronunciatorSimplified.html')
     #return render(request, 'middleChinesePronunciator.html',{"oneTestWord.chineseChar": oneTestWord.chineseChar})
 
-
-
-#What should be done after pressing Play; it should be getting that one word,
-#creating an object of it(and finding the pronunciation for it), and then
-#returning render. 
-
-#My guess is that it is to be called inside the views method to actually get this done as needed.
-def play(request):
-    #My guess is that I'd have to probably play it again.
-    chineseWord = request.post["charsToGet"]
-
-
-    
-        
-    
+##What should be done after pressing Play; it should be getting that one word,
+##creating an object of it(and finding the pronunciation for it), and then
+##returning render. 
+#
+##My guess is that it is to be called inside the views method to actually get this done as needed.
+#def play(request):
+#    #My guess is that I'd have to probably play it again.
+#    chineseWord = request.post["charsToGet"]
+#
+#

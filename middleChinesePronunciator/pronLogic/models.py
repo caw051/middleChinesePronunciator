@@ -6,6 +6,12 @@ class charPairing(models.Model):
     chineseChar = models.CharField(max_length=200) #CharFields allow Chinese chars
 
     #media/documents/%Y/%m/%d
+
+    #upload_to='documents/%Y/%m/%d'
+
+    #upload_to='documents/%Y/%m/%d'
+
+    #Very odd; why does that fail to get parsed ^ when passed in as a var directly?
     corrAudio = models.FileField(upload_to='documents/%Y/%m/%d') #To add files as needed
 
 
