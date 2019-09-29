@@ -1,5 +1,5 @@
 const inputField = document.querySelector("#inputBox");
-rawChineseTextElement = document.querySelector("#rawChineseText");
+const rawChineseTextElement = document.querySelector("#rawChineseText");
 const play = document.querySelector(".clickButtonToPronounce");
 inputBox.addEventListener("input", alertTextInput);
 var typingInput;
@@ -23,7 +23,7 @@ inputBox.oninput = function(){
 //Immediately load jPlayer w/ first clip(out of many), then get the 
 //next URL with the key, and play again(and then loop again)
 play.onclick = function(){
-	//alert(rawChineseTextElement.value);
+	alert("Pronunciation coming soon! The value submitted is: " + inputField.value);
 	let request;
 	let conversionTable = {
 		"东" : "tung",
@@ -52,7 +52,7 @@ play.onclick = function(){
 
 		//Disables sound
 		$('.clickButtonToPronounce').attr('disabled', 'disabled');
-
+		/*
 		alert(soundTable[rawChineseTextElement.value[i]]);
 		player.jPlayer({ 
 			ready: function () { 
@@ -115,8 +115,6 @@ play.onclick = function(){
 						});
 					}
 					//Are those supposed to be abbreviated versions? ------------------> TO ANSWER
-					$('.play-btn').show();
-					$('.stop-btn').hide();
 		
 					return false; //What for? ------------------> TO ANSWER
 				}
@@ -124,7 +122,6 @@ play.onclick = function(){
 	
 
 		})
-	}
 	/*
 	//Plays?
 	$('.play-btn').click(function (e) {
@@ -139,15 +136,10 @@ play.onclick = function(){
 			$('.stop-btn').show();
 		}
 	});*/
-	getSound();
+
+}	
 
 }
 
-//Use the oninput function to be able to clearTimeout.
-//In other words, if user is still typing it, you will not need 
-//to time it. Place it
-//
-//Now that this is correctly implemented, we can now use the non-simplified version to do the same exact thing
-//as needed.
-//
+
 

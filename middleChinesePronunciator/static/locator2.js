@@ -36,7 +36,8 @@ let soundTable = {
 var arrayOfCharsFound = [];
 var iterator;
 for(iterator = 0; i < rawChineseTextElement.value; i++){
-	arrayOfCharsFound.push(rawChineseTextElement.value[i]);
+	alert(inputField.value[i])
+	arrayOfCharsFound.push(inputField.value[i]);
 	alert(arrayOfCharsFound);
 }
 var i;
@@ -49,7 +50,7 @@ function getSound(){
 
 	//Disables sound
 	//$('.clickButtonToPronounce').attr('disabled', 'disabled');
-	alert(soundTable[rawChineseTextElement.value[i]]);
+	alert(arrayOfCharsFound[i]);
 
 	let player = $('<div>').attr('id', 'player'); //Probably for a future located tag as needed
 	player.jPlayer({ 
