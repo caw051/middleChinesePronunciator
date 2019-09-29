@@ -45,12 +45,17 @@
 		</p>
 	</center>
 
-
+	<div id="player" style="width: 0px; height: 0px;">
+		<img id="jp_poster_1" style="width: 0px; height: 0px; display: none;">
+		<audio id="jp_audio_1" preload="metadata" src="127.0.0.1:8887/media/documents/2019/09/12/01_011.mp3",></audio></div>
 
 	<script src={% static "locator2.js" %}>
 
 	</script>
+
 	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src={% static "jquery.jplayer.min.js" %}></script>
 	<!--Precisely where the key is to be held-->
 </body>
 </html>

@@ -49,8 +49,9 @@ function getSound(){
 
 	//Disables sound
 	//$('.clickButtonToPronounce').attr('disabled', 'disabled');
-
 	alert(soundTable[rawChineseTextElement.value[i]]);
+
+	let player = $('<div>').attr('id', 'player'); //Probably for a future located tag as needed
 	player.jPlayer({ 
 		ready: function () { 
 			//If sound exists, load the sound accordingly
@@ -116,6 +117,11 @@ function getSound(){
 			}
 		},
 
+		swfPath: "/js/jplayer",
+		supplied: "mp3",
+		wmode: "window",
+		globalVolume: true,
+		smoothPlayBar: true
 
 	})
 }
