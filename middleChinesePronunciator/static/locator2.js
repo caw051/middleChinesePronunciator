@@ -43,12 +43,12 @@ var i;
 
 function getSound(){ 
 
-	alert(soundTable[rawChineseTextElement.value[i]]);
+	
 	if (request != null)
 		request.abort();
 
 	//Disables sound
-	$('.clickButtonToPronounce').attr('disabled', 'disabled');
+	//$('.clickButtonToPronounce').attr('disabled', 'disabled');
 
 	alert(soundTable[rawChineseTextElement.value[i]]);
 	player.jPlayer({ 
@@ -130,27 +130,10 @@ function getSound(){
 //Immediately load jPlayer w/ first clip(out of many), then get the 
 //next URL with the key, and play again(and then loop again)
 play.onclick = function(){
-	
 	//I.e. to be used if the sound-value tag is filled(just like what I am expecting, to be relied on it seems)
 	if ($('#sound-value').val() != '') {
 		$("#player").jPlayer("play");
 	}
-	
-	/*
-	//Plays?
-	$('.play-btn').click(function (e) {
-		//I.e. to be used if the sound-value tag is filled(just like what I am expecting, to be relied on it seems)
-		if ($('#sound-value').val() != '') {
-			$('#player').jPlayer("option", "playbackRate", $('#cantonesetosound-speedtype').val());
-			$('#player').jPlayer("options", {defaultPlaybackRate: $('#cantonesetosound-speedtype').val()});
-
-
-			$("#player").jPlayer("play");
-			$('.play-btn').hide();
-			$('.stop-btn').show();
-		}
-	});*/
-
 }
 
 //Use the oninput function to be able to clearTimeout.
