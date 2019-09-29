@@ -10,10 +10,9 @@ from .models import charPairing
 
 #Precisely for the purpose of displaying the UI at first glance.
 def pron(request):
-    chineseWord = request.POST.get('charsToGet', False)
-    #Attempting to get one single word inside the Chinese thing.
-    oneTestWord = charPairing.objects.create(chineseChar=chineseWord, corrAudio="documents/2019/09/11/01_023.mp3")
-
+    #chineseWord = request.POST.get('charsToGet', False)
+    ##Attempting to get one single word inside the Chinese thing.
+    #oneTestWord = charPairing.objects.create(chineseChar=chineseWord, corrAudio="documents/2019/09/11/01_023.mp3")
     #oneTestWord.corrAudio = "documents/2019/09/11/01_023.mp3"
 
     return render(request, 'middleChinesePronunciatorSimplified.html')
